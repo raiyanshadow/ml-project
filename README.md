@@ -32,14 +32,14 @@ To address this limitation, I developed **subject-aware extensions of IRT** usin
 
 The first extension introduces a student–subject deviation parameter, allowing each student's effective ability to vary across mathematical subjects:
 
-\[
+$$
 P(c_{ij}=1)=
-\sigma\left(\theta_i+\delta_{i,k(j)}-\beta_j\right),
-\]
+\sigma\left(\theta_i+\delta_{i,k(j)}-\beta_j\right)
+$$
 
-where \(\theta_i\) represents overall student ability, \(\beta_j\) represents question difficulty, and \(\delta_{i,k(j)}\) captures the student's ability deviation for the subject associated with question \(j\).
+where $\theta_i$ represents overall student ability, $\beta_j$ represents question difficulty, and $\delta_{i,k(j)}$ captures the student's ability deviation for the subject associated with question $j$.
 
-An \(L_2\) regularization penalty controls the magnitude of these subject-specific deviations. Experiments investigate different regularization strengths and hierarchy depths to study the trade-off between model flexibility and generalization.
+An $L_2$ regularization penalty controls the magnitude of these subject-specific deviations. Experiments investigate different regularization strengths and hierarchy depths to study the trade-off between model flexibility and generalization.
 
 ### 2. Hierarchical Subject Modeling
 
@@ -49,12 +49,12 @@ These experiments investigate whether increasingly fine-grained subject informat
 
 ### 3. Autoencoder-Based Latent Subject Representations
 
-A further extension replaces independent student–subject deviations with learned latent representations. Each student has a latent vector \(z_i\), and each subject has an embedding \(e_s\). The subject effect is modeled using their inner product:
+A further extension replaces independent student–subject deviations with learned latent representations. Each student has a latent vector $z_i$, and each subject has an embedding $e_s$. The subject effect is modeled using their inner product:
 
-\[
+$$
 \Delta_{ij} =
-\sum_{n=1}^{d} z_i^\top e_{k_n(j)}.
-\]
+\sum_{n=1}^{d} z_i^\top e_{k_n(j)}
+$$
 
 The resulting subject effect is incorporated into the IRT prediction model. An autoencoder is used to pretrain the latent representations, which are then refined through IRT optimization. Regularization is applied to the latent parameters to help control overfitting.
 
@@ -66,10 +66,10 @@ The baseline IRT model achieved a test accuracy of **70.70%**, outperforming the
 
 | Model | Validation accuracy | Test accuracy |
 |---|---:|---:|
-| User-based kNN (\(k=11\)) | 68.90% | 68.28% |
-| Item-based kNN (\(k=21\)) | 68.98% | 68.11% |
+| User-based kNN ($k=11$) | 68.90% | 68.28% |
+| Item-based kNN ($k=21$) | 68.98% | 68.11% |
 | Autoencoder without regularization | ~69.00% | 68.87% |
-| Autoencoder with \(L_2\) regularization | 67.90% | 67.70% |
+| Autoencoder with $L_2$ regularization | 67.90% | 67.70% |
 | Baseline IRT | 70.60% | 70.70% |
 | Subject-aware IRT, single hierarchy level | 70.94% | 70.99% |
 | Hierarchical subject-aware IRT | 70.76% | 71.04% |
@@ -84,7 +84,7 @@ The autoencoder-based latent subject model did not consistently outperform the b
 
 - Implemented and compared collaborative filtering, IRT, autoencoder, and ensemble approaches for student-response prediction.
 - Extended IRT with student-specific subject effects derived from hierarchical question metadata.
-- Investigated the effects of hierarchy depth, latent dimension, and \(L_2\) regularization on predictive performance.
+- Investigated the effects of hierarchy depth, latent dimension, and $L_2$ regularization on predictive performance.
 - Analyzed the trade-off between subject-specific modeling capacity and generalization under sparse observations.
 - Achieved a best reported test accuracy of 71.04% with hierarchical subject-aware IRT.
 
@@ -223,7 +223,6 @@ Results, plots, selected hyperparameters, and comparisons should be documented a
 ## References
 
 - Wang, Zichao, et al. *Diagnostic Questions: The NeurIPS 2020 Education Challenge.* arXiv preprint arXiv:2007.12061, 2020.
-
 - University of Toronto, CSC311 Summer 2026 Final Project handout.
 
 ## Disclaimer
