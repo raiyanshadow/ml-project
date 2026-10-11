@@ -22,13 +22,77 @@ The project explores the following methods:
 - **Matrix Factorization / Neural Networks:** Learns latent representations of students and questions, or reconstructs student response vectors using an autoencoder.
 - **Ensemble Learning:** Combines predictions from multiple base models using bootstrap sampling to investigate whether aggregation improves predictive performance.
 
-### Part B — Model Improvement
+## Part B — Subject-Aware Item Response Theory
 
-The second part investigates a modification to an existing baseline model. The goal is to identify a limitation of the original approach, formulate a proposed improvement, and evaluate the modification experimentally.
+The baseline one-parameter Item Response Theory (IRT) model predicts student response correctness using student ability and question difficulty. However, it does not explicitly account for differences in a student's ability across mathematical subjects.
 
-The analysis compares the modified model against baseline methods, examines the hypothesis motivating the change, and discusses the approach's limitations and possible extensions.
+To address this limitation, I developed **subject-aware extensions of IRT** using the hierarchical subject metadata provided with the Eedi dataset.
 
-*The specific Part B modification and experimental results should be documented here once finalized.*
+### 1. Subject-Specific Ability Deviations
+
+The first extension introduces a student–subject deviation parameter, allowing each student's effective ability to vary across mathematical subjects:
+
+\[
+P(c_{ij}=1)=
+\sigma\left(\theta_i+\delta_{i,k(j)}-\beta_j\right),
+\]
+
+where \(\theta_i\) represents overall student ability, \(\beta_j\) represents question difficulty, and \(\delta_{i,k(j)}\) captures the student's ability deviation for the subject associated with question \(j\).
+
+An \(L_2\) regularization penalty controls the magnitude of these subject-specific deviations. Experiments investigate different regularization strengths and hierarchy depths to study the trade-off between model flexibility and generalization.
+
+### 2. Hierarchical Subject Modeling
+
+Questions can be associated with subjects at multiple levels of a hierarchy. I evaluated models using a single representative subject as well as models that combine subject information across multiple hierarchy levels.
+
+These experiments investigate whether increasingly fine-grained subject information improves prediction accuracy, and whether the additional parameters lead to overfitting when observations are sparse.
+
+### 3. Autoencoder-Based Latent Subject Representations
+
+A further extension replaces independent student–subject deviations with learned latent representations. Each student has a latent vector \(z_i\), and each subject has an embedding \(e_s\). The subject effect is modeled using their inner product:
+
+\[
+\Delta_{ij} =
+\sum_{n=1}^{d} z_i^\top e_{k_n(j)}.
+\]
+
+The resulting subject effect is incorporated into the IRT prediction model. An autoencoder is used to pretrain the latent representations, which are then refined through IRT optimization. Regularization is applied to the latent parameters to help control overfitting.
+
+Experiments vary the latent dimension and the maximum subject hierarchy depth.
+
+## Results
+
+The baseline IRT model achieved a test accuracy of **70.70%**, outperforming the individual baseline models evaluated in Part A.
+
+| Model | Validation accuracy | Test accuracy |
+|---|---:|---:|
+| User-based kNN (\(k=11\)) | 68.90% | 68.28% |
+| Item-based kNN (\(k=21\)) | 68.98% | 68.11% |
+| Autoencoder without regularization | ~69.00% | 68.87% |
+| Autoencoder with \(L_2\) regularization | 67.90% | 67.70% |
+| Baseline IRT | 70.60% | 70.70% |
+| Subject-aware IRT, single hierarchy level | 70.94% | 70.99% |
+| Hierarchical subject-aware IRT | 70.76% | 71.04% |
+
+The best reported test accuracy was **71.04%**, achieved by the hierarchical subject-aware IRT model incorporating multiple subject levels. This represents an absolute improvement of **0.34 percentage points** over baseline IRT.
+
+The results suggest that subject metadata can provide additional predictive information, although the gains are modest. Increasing hierarchy depth also increases model complexity and can lead to overfitting, highlighting the importance of regularization and validation-based model selection.
+
+The autoencoder-based latent subject model did not consistently outperform the baseline IRT model. This suggests that learning compact latent subject representations was not sufficient to produce a reliable improvement on this dataset.
+
+## Key Findings
+
+- Implemented and compared collaborative filtering, IRT, autoencoder, and ensemble approaches for student-response prediction.
+- Extended IRT with student-specific subject effects derived from hierarchical question metadata.
+- Investigated the effects of hierarchy depth, latent dimension, and \(L_2\) regularization on predictive performance.
+- Analyzed the trade-off between subject-specific modeling capacity and generalization under sparse observations.
+- Achieved a best reported test accuracy of 71.04% with hierarchical subject-aware IRT.
+
+## Limitations and Future Work
+
+The main limitation was data sparsity: many student–question pairs were unobserved, while deeper subject categories often had relatively few associated observations. This made subject-specific parameters difficult to estimate reliably.
+
+Potential extensions include training on larger datasets, learning subject groupings directly from response patterns, and investigating alternative regularization or parameter-sharing strategies to improve generalization across related subjects.
 
 ## Dataset
 
