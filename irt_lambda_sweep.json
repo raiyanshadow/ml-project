@@ -1,0 +1,1335 @@
+{
+  "baseline": {
+    "lamb": null,
+    "train_overall": 0.7395039514535704,
+    "val_overall": 0.7060400790290714,
+    "test_overall": 0.7070279424216765,
+    "train_common": null,
+    "train_rare": null,
+    "test_common": null,
+    "test_rare": null
+  },
+  "lambda_0": {
+    "lamb": 0,
+    "num_subjects": 7,
+    "train_overall": 0.7476538244425628,
+    "val_overall": 0.7053344623200677,
+    "test_overall": 0.7098504092576913,
+    "train_common": 0.7476538244425628,
+    "train_rare": 0.8090551181102362,
+    "test_common": 0.7098504092576913,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7476538244425628,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7364894508036534,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7573786893446723,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7510204081632653,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7641802641802642,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.8104265402843602,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.8023255813953488,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7053344623200677,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7232113952735513,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6896325459317585,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.691609977324263,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7019969278033794,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7098504092576913,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7144638403990025,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7102425876010782,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7037470725995316,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.707936507936508,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_0.01": {
+    "lamb": 0.01,
+    "num_subjects": 7,
+    "train_overall": 0.7476714648602879,
+    "val_overall": 0.7053344623200677,
+    "test_overall": 0.7098504092576913,
+    "train_common": 0.7476714648602879,
+    "train_rare": 0.8070866141732284,
+    "test_common": 0.7098504092576913,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7476714648602879,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7364894508036534,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7574620643655161,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7510920157536699,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7641802641802642,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.8080568720379147,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.8023255813953488,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7053344623200677,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7232113952735513,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6896325459317585,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.691609977324263,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7019969278033794,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7098504092576913,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7144638403990025,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7102425876010782,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7037470725995316,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.707936507936508,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_0.05": {
+    "lamb": 0.05,
+    "num_subjects": 7,
+    "train_overall": 0.7476538244425628,
+    "val_overall": 0.7053344623200677,
+    "test_overall": 0.7101326559412927,
+    "train_common": 0.7476538244425628,
+    "train_rare": 0.8070866141732284,
+    "test_common": 0.7101326559412927,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7476538244425628,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7365293343437164,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7572953143238286,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7510920157536699,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7641802641802642,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.8080568720379147,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.8023255813953488,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7053344623200677,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7232113952735513,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6902887139107612,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6910430839002267,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7019969278033794,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7101326559412927,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7144638403990025,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7102425876010782,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7049180327868853,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.707936507936508,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_0.2": {
+    "lamb": 0.2,
+    "num_subjects": 7,
+    "train_overall": 0.747706745695738,
+    "val_overall": 0.7056167090036692,
+    "test_overall": 0.7090036692068868,
+    "train_common": 0.747706745695738,
+    "train_rare": 0.8031496062992126,
+    "test_common": 0.7090036692068868,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.747706745695738,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7366888685039684,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7572953143238286,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7514500537056928,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7634032634032634,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.8056872037914692,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7906976744186046,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7056167090036692,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7232113952735513,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6909448818897638,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6904761904761905,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7050691244239631,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7090036692068868,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7144638403990025,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.706199460916442,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7049180327868853,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7047619047619048,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_1": {
+    "lamb": 1,
+    "num_subjects": 7,
+    "train_overall": 0.7475479819362123,
+    "val_overall": 0.7070279424216765,
+    "test_overall": 0.7087214225232854,
+    "train_common": 0.7475479819362123,
+    "train_rare": 0.7952755905511811,
+    "test_common": 0.7087214225232854,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7475479819362123,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7364894508036534,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7573786893446723,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7519513068385248,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7618492618492618,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.7962085308056872,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7906976744186046,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7070279424216765,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7228876659112982,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6916010498687664,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6927437641723356,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7142857142857143,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7087214225232854,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7138403990024937,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7102425876010782,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.702576112412178,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7015873015873015,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_5": {
+    "lamb": 5,
+    "num_subjects": 7,
+    "train_overall": 0.7458192209991532,
+    "val_overall": 0.709427039232289,
+    "test_overall": 0.7098504092576913,
+    "train_common": 0.7458192209991532,
+    "train_rare": 0.7578740157480315,
+    "test_common": 0.7098504092576913,
+    "test_rare": 0.6785714285714286,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7458192209991532,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7362900331033383,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7548774387193596,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7493018259935553,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7604895104895105,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.7535545023696683,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7790697674418605,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.709427039232289,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7232113952735513,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6948818897637795,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6989795918367347,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7142857142857143,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7098504092576913,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7113466334164589,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.706199460916442,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7084309133489461,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7174603174603175,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6956521739130435,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_10": {
+    "lamb": 10,
+    "num_subjects": 7,
+    "train_overall": 0.7448313576065482,
+    "val_overall": 0.7077335591306803,
+    "test_overall": 0.7095681625740897,
+    "train_common": 0.7448313576065482,
+    "train_rare": 0.75,
+    "test_common": 0.7095681625740897,
+    "test_rare": 0.6071428571428571,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7448313576065482,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7362501495632753,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7530431882607971,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7478696741854637,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7587412587412588,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.7511848341232228,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7441860465116279,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7077335591306803,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.722563936549045,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6942257217847769,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6944444444444444,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7127496159754224,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7095681625740897,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7113466334164589,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7035040431266847,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.711943793911007,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7174603174603175,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6086956521739131,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_20": {
+    "lamb": 20,
+    "num_subjects": 7,
+    "train_overall": 0.7434201241885408,
+    "val_overall": 0.707310189105278,
+    "test_overall": 0.7092859158904883,
+    "train_common": 0.7434201241885408,
+    "train_rare": 0.7362204724409449,
+    "test_common": 0.7092859158904883,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7434201241885408,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7351732939815738,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7528764382191095,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7461510920157537,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7548562548562548,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.7417061611374408,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7093023255813954,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.707310189105278,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7219164778245387,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6909448818897638,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6944444444444444,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7188940092165899,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6078431372549019,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7092859158904883,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7107231920199502,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7021563342318059,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7142857142857143,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7111111111111111,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  },
+  "lambda_50": {
+    "lamb": 50,
+    "num_subjects": 7,
+    "train_overall": 0.7416560824160316,
+    "val_overall": 0.7068868190798758,
+    "test_overall": 0.7081569291560824,
+    "train_common": 0.7416560824160316,
+    "train_rare": 0.7322834645669292,
+    "test_common": 0.7081569291560824,
+    "test_rare": 0.6428571428571429,
+    "n_test_common": 3543,
+    "n_test_rare": 28,
+    "subject_scores": {
+      "train": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7416560824160316,
+          "n": 56688
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7344553902604395,
+          "n": 25073
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.7509588127397032,
+          "n": 11994
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7432867883995704,
+          "n": 13965
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7515540015540015,
+          "n": 5148
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.7393364928909952,
+          "n": 422
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6976744186046512,
+          "n": 86
+        }
+      },
+      "val": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7068868190798758,
+          "n": 7086
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7215927484622855,
+          "n": 3089
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6916010498687664,
+          "n": 1524
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.6933106575963719,
+          "n": 1764
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7158218125960062,
+          "n": 651
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6274509803921569,
+          "n": 51
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.7142857142857143,
+          "n": 7
+        }
+      },
+      "test": {
+        "0": {
+          "subject_id": 0,
+          "subject_name": "Maths",
+          "accuracy": 0.7081569291560824,
+          "n": 3543
+        },
+        "1": {
+          "subject_id": 1,
+          "subject_name": "Number",
+          "accuracy": 0.7100997506234414,
+          "n": 1604
+        },
+        "2": {
+          "subject_id": 17,
+          "subject_name": "Algebra",
+          "accuracy": 0.6994609164420486,
+          "n": 742
+        },
+        "3": {
+          "subject_id": 39,
+          "subject_name": "Geometry and Measure",
+          "accuracy": 0.7131147540983607,
+          "n": 854
+        },
+        "4": {
+          "subject_id": 68,
+          "subject_name": "Data and Statistics",
+          "accuracy": 0.7111111111111111,
+          "n": 315
+        },
+        "5": {
+          "subject_id": 86,
+          "subject_name": "Advanced Pure",
+          "accuracy": 0.6521739130434783,
+          "n": 23
+        },
+        "6": {
+          "subject_id": 313,
+          "subject_name": "Maths-Others",
+          "accuracy": 0.6,
+          "n": 5
+        }
+      }
+    }
+  }
+}
